@@ -1,25 +1,58 @@
 {
-  "name": "react-native-busy-indicator",
-  "version": "1.0.9",
-  "main": "index.js",
-  "description": "A simple busy indicator which can be trigger from any child or navigated page in react native application",
-  "scripts": {
-    "lint": "eslint index.js LoaderHandler.js",
-    "mocha": "mocha --require babel-core/register scripts/test-helper.js --bail 'tests/**/*.test.js'",
-    "test": "npm run lint && npm run mocha"
-  },
-  "keywords": [
-    "react",
-    "native",
-    "busy",
-    "indicator",
-    "loading",
-    "indicator",
-    "ios",
-    "android",
-    "react-component",
-    "react-native"
+  "_args": [
+    [
+      {
+        "name": "react-native-busy-indicator",
+        "raw": "react-native-busy-indicator",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      "f:\\HuoBanYunApp\\HuoBanYunApp"
+    ]
   ],
+  "_cnpm_publish_time": 1470048930316,
+  "_from": "react-native-busy-indicator@latest",
+  "_id": "react-native-busy-indicator@1.0.9",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-busy-indicator",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/react-native-busy-indicator-1.0.9.tgz_1470048929661_0.9843393145129085"
+  },
+  "_npmUser": {
+    "email": "git@theorangeone.net",
+    "name": "theorangeone"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-native-busy-indicator",
+    "raw": "react-native-busy-indicator",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native-busy-indicator/download/react-native-busy-indicator-1.0.9.tgz",
+  "_shasum": "c614bbf5b9f2836d6663cf83013b62922d9fc552",
+  "_shrinkwrap": null,
+  "_spec": "react-native-busy-indicator",
+  "_where": "f:\\HuoBanYunApp\\HuoBanYunApp",
+  "author": {
+    "name": "Durgaprasad Budhwani"
+  },
+  "bugs": {
+    "url": "https://github.com/RealOrangeOne/react-native-busy-indicator/issues"
+  },
+  "dependencies": {},
+  "description": "A simple busy indicator which can be trigger from any child or navigated page in react native application",
   "devDependencies": {
     "babel-cli": "=6.11.4",
     "babel-eslint": "=4.1.7",
@@ -39,13 +72,50 @@
     "sinon": "=1.17.4",
     "sinon-chai": "=2.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RealOrangeOne/react-native-busy-indicator"
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "c614bbf5b9f2836d6663cf83013b62922d9fc552",
+    "size": 257363,
+    "tarball": "http://registry.npm.taobao.org/react-native-busy-indicator/download/react-native-busy-indicator-1.0.9.tgz"
   },
-  "author": "Durgaprasad Budhwani",
+  "gitHead": "b746f4bf0869a749ce7301b25c195f960dba199c",
+  "homepage": "https://github.com/RealOrangeOne/react-native-busy-indicator#readme",
+  "keywords": [
+    "react",
+    "native",
+    "busy",
+    "indicator",
+    "loading",
+    "indicator",
+    "ios",
+    "android",
+    "react-component",
+    "react-native"
+  ],
   "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "durgaprasad.budhwani@gmail.com",
+      "name": "durgaprasad"
+    }
+  ],
+  "name": "react-native-busy-indicator",
+  "optionalDependencies": {},
   "peerDependencies": {
     "react-native": ">=0.25.0"
-  }
+  },
+  "publish_time": 1470048930316,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealOrangeOne/react-native-busy-indicator.git"
+  },
+  "scripts": {
+    "lint": "eslint index.js LoaderHandler.js",
+    "mocha": "mocha --require babel-core/register scripts/test-helper.js --bail 'tests/**/*.test.js'",
+    "test": "npm run lint && npm run mocha"
+  },
+  "version": "1.0.9"
 }

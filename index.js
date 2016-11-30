@@ -5,9 +5,10 @@ import {
   View,
   Text,
   DeviceEventEmitter,
-  ActivityIndicator
+  ActivityIndicator,
+  Modal
 } from 'react-native';
-
+import { Bubbles, DoubleBounce, Bars, Pulse } from 'react-native-loader';
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
@@ -44,13 +45,13 @@ const BusyIndicator = React.createClass({
     return {
       isDismissible: false,
       overlayWidth: 120,
-      overlayHeight: 100,
+      overlayHeight: 90,
       overlayColor: '#333333',
       color: '#f5f5f5',
       startVisible: false,
       text: 'Please wait...',
       textColor: '#f5f5f5',
-      textFontSize: 14
+      textFontSize: 13
     };
   },
 
@@ -86,6 +87,17 @@ const BusyIndicator = React.createClass({
         width: this.props.overlayWidth,
         height: this.props.overlayHeight
       },
+       container: {
+        position: 'absolute',
+        backgroundColor:this.props.bgColor?this.props.bgColor:'rgba(0,0,0,0.3)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        flex: 1
+      },
       text: {
         color: this.props.textColor,
         fontSize: this.props.textFontSize,
@@ -97,17 +109,22 @@ const BusyIndicator = React.createClass({
       return (<View />);
     } else {
       return (
-        <View style={[styles.container]}>
+        
+        <View style={customStyles.container}>
           <View style={customStyles.overlay}>
-            <ActivityIndicator
-              color={this.props.color}
-              size="small"
-              style={styles.progressBar}/>
+            {
+              this.props.loadType==1?<Bars size={this.props.loadSize} color={this.props.color} />:
+                this.props.loadType==2?<Bubbles size={this.props.loadSize} color={this.props.color} />:
+                  this.props.loadType==3?<Pulse size={this.props.loadSize} color={this.props.color} />:
+                    this.props.loadType==4?<DoubleBounce size={this.props.loadSize} color={this.props.color} />:
+                      <Bars size={this.props.loadSize} color={this.props.color} />
+            }
             <Text numberOfLines={1} style={customStyles.text}>
               {this.state.text}
             </Text>
           </View>
         </View>
+
       );
     }
   }
